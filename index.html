@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>demo</title>
+        <style>
+        #parent{
+            position: relative;
+        }
+        #rightDown{
+            position: absolute;
+            background:burlywood;
+            width: 100px;
+            height: 100px;
+        }
+        </style>
+	</head>
+    <body>
+        <div id="parent">
+            <span class="children">children1</span>
+            <span class="children">children2</span>
+            <span class="children">children3</span>
+            <span class="children">children4</span>
+            <div id="rightDown" style="display: none;">
+
+            </div>
+        </div>
+        <script>
+        var current;
+        var isShow=true;
+        var parent = document.getElementById("parent");
+        var rightDown = document.getElementById("rightDown");
+        parent.addEventListener("click",function(e){
+            rightDown.style.display="";
+            if(e.target.className==="children" &&current!== e.target){
+                current? current.style.color="black":'';
+                e.target.style.color="red";
+                current = e.target
+                rightDown.style.display="";
+                rightDown.innerText = current.innerText;
+                rightDown.style.left = current.offsetLeft+"px";
+                rightDown.style.top = current.offsetHeight+"px";
+            }else if(current=== e.target){
+                isShow = !isShow;
+                rightDown.style.display="none";
+            }
+            if(!isShow){
+                rightDown.style.display="";
+            }
+        },false)
+        </script>
+	</body>
+</html>
