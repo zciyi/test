@@ -4,7 +4,7 @@
 ```
 mermaid
 flowchart LR
-        A["A double quote:#quot;"] -->B["A dec char:#9829;"]
+        "A double quote:#quot;" -->B"A dec char:#9829;"
 
 ```
 
