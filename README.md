@@ -5,8 +5,7 @@
 mermaid
 flowchart LR
 
-A[hahah] --> B[ekekek];
-B --> C['根据唯一标识请求api获取数据'];
+A[hahah] --> B[ekekek] --> C[dfl];
 
 ```
 
