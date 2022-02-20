@@ -43,3 +43,11 @@ window.onload = function () {
 		bigImage.style.top = -(top * bigImage.offsetHeight)/smallBox.offsetHeight + "px";
 	}
 }
+
+```mermaid
+graph TD;
+A-->B;
+A-->C;
+B-->D;
+C-->D;
+```
