@@ -5,7 +5,7 @@
 mermaid
 flowchart LR
 
-A['给第三方插件唯一标识'] --> B['第三方插件获取文件处理数据'];
+A[hahah] --> B[ekekek];
 B --> C['根据唯一标识请求api获取数据'];
 
 ```
