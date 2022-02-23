@@ -3,7 +3,7 @@
 
 ```mermaid
 flowchart LR
-        A["还是;"] -->B["水电费"]
+        A["我"] -->B["你"]
 
 ```
 
