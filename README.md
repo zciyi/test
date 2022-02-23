@@ -3,7 +3,7 @@
 
 ```mermaid
 flowchart LR
-        A["A double quote:#quot;"] -->B["A dec char:#9829;"]
+        A["还是;"] -->B["水电费"]
 
 ```
 
